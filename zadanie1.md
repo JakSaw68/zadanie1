@@ -9,24 +9,23 @@ Jakub Sawiarski IIST 6.8
 
 3. Polecenia dot. obrazu kontenera serwera
    - Zbudowanie obrazu kontenera
-     -```docker build -t zadanie1 .```
+     - ```docker build -t zadanie1 .```
    - Uruchomienie kontenera o nazwie zadanie1_cont na porcie 3000
-     -```docker run -it -p 3000:3000 --name zadanie1_cont zadanie1```
+     - ```docker run -it -p 3000:3000 --name zadanie1_cont zadanie1```
    - Wyświetlenie informacji wygenerowanych przez serwer
-     -```docker logs zadanie1_cont```
+     - ```docker logs zadanie1_cont```
    - Wyświetlenie info dot. warstw obrazu
-     -```docker history zadanie1```
+     - ```docker history zadanie1```
 
 4. Polecenia dot. kontenera multiplatformowego i przesłania na DockerHub
    - Instalacja pakietu platform
-    ```sudo apt-get install -y qemu-user-static```
-   -Utworzenie i przygotowanie kontenera multiplatformowego
-
-    ```docker buildx create --name zad1builder```
-    ```docker buildx use zad1builder```
-    ```docker buildx inspect --bootstrap```
-   -Wysłanie kontenera na DockerHub
-    ```docker buildx build -t jaksaw68/zadanie1:node --platform linux/arm/v7,linux/arm64/v8,linux/amd64 --push .```
+     - ```sudo apt-get install -y qemu-user-static```
+   - Utworzenie i przygotowanie kontenera multiplatformowego
+     - ```docker buildx create --name zad1builder```
+     - ```docker buildx use zad1builder```
+     - ```docker buildx inspect --bootstrap```
+   - Wysłanie kontenera na DockerHub
+     - ```docker buildx build -t jaksaw68/zadanie1:node --platform linux/arm/v7,linux/arm64/v8,linux/amd64 --push .```
 
 Dodatek1:
  1. Wykorzystanie GitHub Actions
