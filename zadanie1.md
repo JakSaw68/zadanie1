@@ -26,12 +26,13 @@ Jakub Sawiarski IIST 6.8
      - ```docker buildx inspect --bootstrap```
    - Wysłanie kontenera na DockerHub
      - ```docker buildx build -t jaksaw68/zadanie1:node --platform linux/arm/v7,linux/arm64/v8,linux/amd64 --push .```
+     - Link do kontenera Docker Hub znajduje się w pliku tekstowym na Moodle
 
 Dodatek1:
  1. Wykorzystanie GitHub Actions
     - Do przesłania kontenera przez GitHub Actions utworzono i wykorzystano plik .github/workflows/main.yml
     - Eksport cache rejestru wykonano za pomocą linii cache-from/to z nazwą tagu kontenera 
-    - Do przesłania i autoryzacji kontenera na GitHub Container Registry wygenerowano i użyto token PAT zapisanego w sekrecie repozytorium. Link do kontenera znajduje się w pliku tekstowym na Moodle
+    - Do przesłania i autoryzacji kontenera na GitHub Container Registry wygenerowano i użyto token PAT zapisanego w sekrecie repozytorium. Link do kontenera GHCR znajduje się w pliku tekstowym na Moodle
 
 
 
