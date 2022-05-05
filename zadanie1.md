@@ -32,7 +32,7 @@ Dodatek1:
  1. Wykorzystanie GitHub Actions
     - Do przesłania kontenera przez GitHub Actions utworzono i wykorzystano plik .github/workflows/main.yml
     - Eksport cache rejestru wykonano za pomocą linii cache-from/to z nazwą tagu kontenera 
-    - Do przesłania i autoryzacji kontenera na GitHub Container Registry wygenerowano i użyto token PAT zapisanego w sekrecie repozytorium. Link do kontenera GHCR znajduje się w pliku tekstowym na Moodle
+    - Do przesłania i autoryzacji kontenera na GitHub wygenerowano i użyto token PAT zapisanego w sekrecie repozytorium. Link do kontenera na GitHub znajduje się w pliku tekstowym na Moodle
 
 
 
