@@ -29,6 +29,9 @@ Jakub Sawiarski IIST 6.8
 
 Dodatek1:
  1. Wykorzystanie GitHub Actions
+    - Do przesłania kontenera przez GitHub Actions utworzono i wykorzystano plik .github/workflows/main.yml
+    - Eksport cache rejestru wykonano za pomocą linii cache-from/to z nazwą tagu kontenera 
+    - Do przesłania i autoryzacji kontenera na GitHub Container Registry wygenerowano i użyto token PAT zapisanego w sekrecie repozytorium. Link do kontenera znajduje się w pliku tekstowym na Moodle
 
 
 
